@@ -1,0 +1,46 @@
+{
+  "name": "@code-bucket/complete-iso",
+  "version": "0.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "Piotr Starzec",
+  "keywords": [
+    "iso",
+    "currency",
+    "countries"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/spiotr12/complete-iso.git"
+  },
+  "bugs": {
+    "url": "https://github.com/spiotr12/complete-iso/issues"
+  },
+  "homepage": "https://github.com/spiotr12/complete-iso#readme",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "dist/**/*"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "tsc --project tsconfig.build.json",
+    "test": "jest",
+    "lint": "eslint",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint"
+  },
+  "dependencies": {
+    "xml-js": "^1.6.11"
+  },
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@typescript-eslint/eslint-plugin": "^4.29.0",
+    "@typescript-eslint/parser": "^4.29.0",
+    "axios": "^0.21.1",
+    "eslint": "^7.32.0",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.5"
+  }
+}
